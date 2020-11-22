@@ -8,7 +8,7 @@
 
 ## Co nás čeká
 
-Dnešní lekce se bude celá točit okolo našeho prvního projektu. Který si společně zpracujeme od A až do Z. Tedy od analýzy zadání až po návrh možných rozšíření.
+Dnešní lekce se bude celá točit okolo našeho prvního projektu. Který si společně zpracujeme od A až do Z. Tedy od analýzy zadání až po zpracování možných rozšíření.
 Použijeme skoro všechny znalosti, které jste nabyli za poslední 4 lekce a přidáme si k nim i pár novinek.
 
 - [Projekt](#projekt)
@@ -34,6 +34,22 @@ A jeho jednotlivé části:
 ## Projekt
 
 ### Zadání
+
+Úkolem je naprogramovat aplikaci, která vypíše všechny státy evropské unie, které mají daň vyšší, než 18%. Aktuální data o jedotlivých státech a jejich daních budou dodány vždy v souboru - vzorový soubor je ke stažení zde: [vat-eu.csv](https://github.com/ENGETO-Java-Akademie/lekce_05/blob/main/vat-eu.csv).
+
+Na každém řádku v tomto souboru budou informace vždy o jednom státu a to tyto a v tomto pořadí:
+
+- zkratka státu
+
+- název státu
+
+- plná sazba daně z přidané hodnoty
+
+- snížená sazba daně z přidané hodbnoty
+
+- informace o tom, jestli země používá speciální sazbu DPH pro některé produkty
+
+Jednotlivé hodnoty jsou odděleny vždy tabulátorem.
 
 ### Analýza zadání
 
