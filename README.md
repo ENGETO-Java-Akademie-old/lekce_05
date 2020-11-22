@@ -39,15 +39,15 @@ A jeho jednotlivé části:
 
 Na každém řádku v tomto souboru budou informace vždy o jednom státu a to tyto a v tomto pořadí:
 
-- zkratka státu
+- zkratka státu (AT)
 
-- název státu
+- název státu (Austria)
 
-- plná sazba daně z přidané hodnoty
+- plná sazba daně z přidané hodnoty (20)
 
-- snížená sazba daně z přidané hodbnoty
+- snížená sazba daně z přidané hodbnoty (10)
 
-- informace o tom, jestli země používá speciální sazbu DPH pro některé produkty
+- informace o tom, jestli země používá speciální sazbu DPH pro některé produkty (true)
 
 Jednotlivé hodnoty jsou odděleny vždy tabulátorem.
 
