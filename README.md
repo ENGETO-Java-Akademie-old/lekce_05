@@ -237,7 +237,42 @@ countrysTaxesList.add(rozparsujData(zaznamKRozparsovani));
 
 ### Zpracování dat
 
+Máme připravený list daňových sazeb, které máme za úkol protřídit tak, aby zůstaly jen ty, co splňují zadanou podmínku - základní sazba DPH je větší, než 18%.
+
+Protože je možné, že z daty budeme chtít provádět ještě nějaké další operace, tak nebudeme měnit ten původní list, ale vytvoříme si metodu, která ten původní list dostane jako parametr a jako výsledek vrátí nový list s vyfiltrovanými daňovými sazbami.
+
+```java
+public List<CountrysTaxes> filterCountrysWithRateHigherThan18(List<CountrysTaxes> countrysTaxesList) {
+    List<CountrysTaxes> resultList = new ArrayList<>();
+    for (CountrysTaxes ct : countrysTaxesList) {
+        if (ct.getFullTaxRate() > 18.0F) {
+            resultList.add(ct);
+        }
+    }
+    return resultList;
+}
+```
+
 ### Vypsání výsledku
+
+V předchozím bodě jsme si profiltrovali ty naše záznamy a získali jsme tak <b>List</b> sazeb, které vyhovovaly zadané podmínce.
+
+Podle zadání máme vždy vypsat Jméno státu a v závorce plnou daňovou sazbu.
+
+Připravíme si tedy metodu, která nám vypíše všechny sazby, které si předáme jako parametr:
+
+```java
+public void printTaxesToConsole(List<CountrysTaxes> countrysTaxesList) {
+
+    for (CountrysTaxes ct : countrysTaxesList) {
+    
+        System.out.println(ct.getCountryName() + " (" + ct.getFullTaxRate().toString() + ")");
+    
+    }
+
+}
+
+```
 
 ### Rozšíření
 
