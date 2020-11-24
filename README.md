@@ -240,3 +240,21 @@ countrysTaxesList.add(rozparsujData(zaznamKRozparsovani));
 ### Vypsání výsledku
 
 ### Rozšíření
+
+Pro případ, že bychom hlavní část zadání stihli rychleji, než bylo v plánu, tu mám ještě dvě rozšíření:
+
+1.) Přidej do programu ovládání skrze konzoli a možnost vypsat informace o sazbách v konkrétním státě.
+
+Drobná nápověda - Scanner umí načítat i data z konzole a to takto:
+
+```java
+String oblibenaBarva;
+// vytvoříme si Scanner, kterému tentokrát nepředáme konkrétní soubor, ale System.in, čímž mu řekneme, že budeme načítat z konzole
+Scanner scanner = new Scanner(System.in);
+// požádáme uživatele o zadání nějaké hodnoty
+System.out.println("Zadej svoji oblíbenou barvu:");
+// a tu hodnotu načteme do proměnné oblibenaBarva
+oblibenaBarva = scanner.nextLine();
+```
+
+2.) Přidej možnost vypsání států seřazených podle jejich daňových sazeb.
