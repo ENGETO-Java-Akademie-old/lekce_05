@@ -276,7 +276,7 @@ public void printTaxesToConsole(List<CountrysTaxes> countrysTaxesList) {
 
 ### Rozšíření
 
-Pro případ, že bychom hlavní část zadání stihli rychleji, než bylo v plánu, tu mám ještě dvě rozšíření:
+Pro případ, že bychom hlavní část zadání stihli rychleji, než bylo v plánu, tu mám ještě rozšíření:
 
 1.) Přidej do programu ovládání skrze konzoli a možnost vypsat informace o sazbách v konkrétním státě.
 
@@ -291,5 +291,3 @@ System.out.println("Zadej svoji oblíbenou barvu:");
 // a tu hodnotu načteme do proměnné oblibenaBarva
 oblibenaBarva = scanner.nextLine();
 ```
-
-2.) Přidej možnost vypsání států seřazených podle jejich daňových sazeb.
